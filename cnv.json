@@ -1,0 +1,5 @@
+{
+    "kruskal": 0.13612338957132886,
+    "mannwhitneyu": 0.11829653169366874,
+    "boruta": "features selection is empty"
+}
