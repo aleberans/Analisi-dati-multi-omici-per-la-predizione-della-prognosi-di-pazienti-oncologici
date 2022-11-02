@@ -1,0 +1,22 @@
+{
+    "mannwhitneyu": {
+        "internal": 0.2025287367141339,
+        "external": 0.1496988412832582
+    },
+    "mrmr": {
+        "internal": 0.17924660745628065,
+        "external": 0.13569864713638802
+    },
+    "mannwhitneyu_with_umap": {
+        "internal": 0.4310240373187262,
+        "external": 0.17787602461967278
+    },
+    "boruta": {
+        "internal": 0.152847153832749,
+        "external": 0.12288255671231038
+    },
+    "mine": {
+        "internal": 0.15111204138279866,
+        "external": 0.12484018994991511
+    }
+}
