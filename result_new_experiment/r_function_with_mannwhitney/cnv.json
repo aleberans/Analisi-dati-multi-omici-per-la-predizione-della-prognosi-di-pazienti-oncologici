@@ -1,0 +1,8 @@
+{
+    "r_function_with_mannwhitney": {
+        "internal": "0.1420",
+        "external": "0.1088",
+        "best_estimator": "RandomForestClassifier(max_features=None, max_leaf_nodes=2, n_estimators=51)",
+        "feature_used": "{1: Index(['ZDHHC13', 'C19orf40', 'DLG2', 'LINC00662', 'ABR', 'CAPN12'], dtype='object'), 2: Index(['ACTN3', 'C19orf40', 'DLG2', 'IGF2BP1', 'MIR1277', 'ZNF717', 'PTPRCAP'], dtype='object'), 3: Index(['ACTN3', 'DLG2', 'SMOX', 'MACROD2', 'PTPRCAP'], dtype='object'), 4: Index(['ACTN3', 'ZDHHC13', 'L3MBTL4', 'PTPRCAP'], dtype='object'), 5: Index(['IGSF5', 'ACTN3', 'C19orf40', 'LINC00662', 'L3MBTL4', 'PTPRCAP',\n       'SHCBP1', 'C11orf95'],\n      dtype='object'), 6: Index(['ACTN3', 'SNORD45|ENSG00000200706.1', 'DLG2', 'LINC00662', 'SMOX',\n       'MACROD2', 'PTPRCAP'],\n      dtype='object'), 7: Index(['C19orf40', 'DLG2', 'L3MBTL4', 'CCSER1', 'PTPRCAP'], dtype='object'), 8: Index(['ACTN3', 'C19orf40', 'SPANXD', 'MIR1277', 'PTPRCAP'], dtype='object'), 9: Index(['DLG2', 'CCSER1', 'ZNF717', 'MACROD2'], dtype='object'), 10: Index(['ZDHHC13', 'C19orf40', 'DLG2', 'C5orf17', 'MACROD2'], dtype='object')}"
+    }
+}
