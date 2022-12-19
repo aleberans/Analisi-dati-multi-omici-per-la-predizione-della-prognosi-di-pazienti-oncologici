@@ -1,0 +1,8 @@
+{
+    "r_function_with_mannwhitney_boruta": {
+        "internal": "0.1746",
+        "external": "0.1431",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=10, n_estimators=251)",
+        "feature_used": "{1: ['PRAS40_pT246', 'PI3K-p110-alpha', 'Annexin_VII', 'p27', 'Shc_pY317'], 2: ['PRAS40_pT246', 'mTOR_pS2448', 'mTOR', 'p27', 'XRCC1', '4E-BP1_pS65'], 3: ['mTOR', 'p27', 'MIG-6'], 4: ['PRAS40_pT246', 'mTOR', 'p27', 'Jak2', 'Ku80'], 5: ['PRAS40_pT246', 'eIF4E', 'p27', 'Jak2', 'Shc_pY317', 'XRCC1'], 6: ['PRAS40_pT246', 'GSK3_pS9', 'p27'], 7: ['mTOR', 'eIF4E', 'p27'], 8: ['PRAS40_pT246', 'mTOR', 'p27', 'B-Raf_pS445'], 9: ['mTOR', 'p27', 'Jak2', 'PREX1', 'Shc_pY317'], 10: ['PRAS40_pT246', 'mTOR', 'Jak2', 'Shc_pY317']}"
+    }
+}

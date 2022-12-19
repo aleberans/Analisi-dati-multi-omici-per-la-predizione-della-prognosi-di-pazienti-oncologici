@@ -1,0 +1,17 @@
+{
+    "mannwhitneyu": {
+        "internal": "0.1816",
+        "external": "0.1520",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_leaf_nodes=10, n_estimators=101)"
+    },
+    "mannwhitneyu_with_umap": {
+        "internal": "0.2635",
+        "external": "0.1109",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       n_estimators=101)"
+    },
+    "boruta": {
+        "internal": "0.1863",
+        "external": "0.1404",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=5, n_estimators=51)"
+    }
+}

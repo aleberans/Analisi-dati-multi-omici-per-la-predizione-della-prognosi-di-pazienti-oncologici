@@ -14,5 +14,10 @@
     "mrmr": {
         "internal": 0.16488654719236345,
         "external": 0.1296266685667408
+    },
+    "mannwhitneyu_with_umap": {
+        "internal": "0.4141",
+        "external": "0.1509",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_leaf_nodes=10, n_estimators=51)"
     }
 }
