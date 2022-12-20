@@ -1,7 +1,0 @@
-{
-    "r_function_intrinsic_with_umap": {
-        "internal": "0.1818",
-        "external": "0.1548",
-        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=2, n_estimators=251)"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "r_function_with_mannwhitney_boruta": {
-        "internal": "-1",
-        "external": "-1",
-        "best_estimator": "nd",
-        "feature_used": "nd"
-    }
-}
