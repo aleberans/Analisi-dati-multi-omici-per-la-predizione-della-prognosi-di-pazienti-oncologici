@@ -1,0 +1,7 @@
+{
+    "r_function_with_mannwhitney_mrmr": {
+        "internal": "0.2443",
+        "external": "0.1872",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=5, n_estimators=101)"
+    }
+}

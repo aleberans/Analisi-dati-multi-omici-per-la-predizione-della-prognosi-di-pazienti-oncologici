@@ -1,7 +1,0 @@
-{
-    "r_function_intrinsic_with_tsne": {
-        "internal": "0.1788",
-        "external": "0.1414",
-        "best_estimator": "RandomForestClassifier(max_features='log2', max_leaf_nodes=10, n_estimators=51)"
-    }
-}
