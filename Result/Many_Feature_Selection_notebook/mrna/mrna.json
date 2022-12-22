@@ -1,0 +1,22 @@
+{
+    "mannwhitneyu": {
+        "internal": "0.2281",
+        "external": "0.1476",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_leaf_nodes=2, n_estimators=51)"
+    },
+    "mannwhitneyu_with_umap": {
+        "internal": "0.3874",
+        "external": "0.1433",
+        "best_estimator": "RandomForestClassifier(max_leaf_nodes=10, n_estimators=51)"
+    },
+    "boruta": {
+        "internal": "0.1987",
+        "external": "0.1606",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features=None, max_leaf_nodes=2,\n                       n_estimators=251)"
+    },
+    "mine": {
+        "internal": "0.2268",
+        "external": "0.1660",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=10, n_estimators=51)"
+    }
+}

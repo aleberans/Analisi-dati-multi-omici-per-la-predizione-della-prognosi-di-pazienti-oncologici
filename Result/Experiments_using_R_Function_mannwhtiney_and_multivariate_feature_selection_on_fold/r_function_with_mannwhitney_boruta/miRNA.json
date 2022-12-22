@@ -1,0 +1,8 @@
+{
+    "r_function_with_mannwhitney_boruta/": {
+        "internal": "0.1779",
+        "external": "0.1280",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=2, n_estimators=101)",
+        "feature_used": "{0: ['hsa-mir-142', 'hsa-mir-653'], 1: ['hsa-let-7g'], 2: ['hsa-mir-29b-2'], 3: ['hsa-let-7g', 'hsa-mir-130a', 'hsa-mir-29b-2'], 4: ['hsa-let-7g', 'hsa-mir-29b-2'], 5: ['hsa-let-7g', 'hsa-mir-155', 'hsa-mir-142', 'hsa-mir-505'], 6: ['hsa-mir-20b'], 7: ['hsa-mir-142'], 8: ['hsa-mir-155'], 9: ['hsa-let-7g', 'hsa-mir-362', 'hsa-mir-29b-2']}"
+    }
+}

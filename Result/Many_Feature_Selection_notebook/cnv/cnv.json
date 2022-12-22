@@ -1,0 +1,7 @@
+{
+    "spearman": {
+        "internal": "0.1347",
+        "external": "0.0991",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_leaf_nodes=5, n_estimators=101)"
+    }
+}
