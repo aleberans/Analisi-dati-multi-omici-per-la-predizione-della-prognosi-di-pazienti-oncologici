@@ -1,0 +1,8 @@
+{
+    "r_function_with_mannwhitney_boruta": {
+        "internal": "0.1608",
+        "external": "0.1273",
+        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=10, n_estimators=101)",
+        "feature_used": "{0: ['PRAS40_pT246', 'mTOR', 'hsa-mir-130a', 'hsa-mir-653', 'Annexin_VII', 'p27', 'hsa-mir-142'], 1: ['PRAS40_pT246', '4E-BP1_pS65', 'mTOR', 'hsa-mir-148a', 'XRCC1', 'PREX1', 'mTOR_pS2448', 'p27', 'hsa-let-7g', 'hsa-mir-142'], 2: ['hsa-mir-29b-2', 'PRAS40_pT246', 'hsa-mir-29c', 'p27', 'MIG-6'], 3: ['hsa-mir-29b-2', 'PRAS40_pT246', 'mTOR', 'hsa-mir-130a', 'XRCC1', 'Ku80', 'Akt_pS473', 'p27', 'hsa-let-7g'], 4: ['hsa-mir-29b-2', 'XRCC1', 'Jak2', 'p27', 'Shc_pY317', 'hsa-let-7g', 'eIF4E'], 5: ['PRAS40_pT246', 'hsa-mir-155', 'GSK3_pS9', 'p27', 'hsa-let-7g', 'hsa-mir-142'], 6: ['mTOR', 'hsa-mir-20b', 'p27'], 7: ['PRAS40_pT246', 'mTOR', 'B-Raf_pS445', 'XRCC1', 'PREX1', 'p27', 'hsa-let-7g'], 8: ['hsa-mir-155', 'mTOR', 'PREX1', 'p27', 'Shc_pY317'], 9: ['hsa-mir-19b-2', 'hsa-mir-362', 'mTOR', 'Shc_pY317', 'hsa-let-7g']}"
+    }
+}

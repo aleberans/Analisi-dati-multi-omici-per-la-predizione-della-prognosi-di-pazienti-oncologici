@@ -1,7 +1,7 @@
 {
     "r_function_with_mannwhitney_boruta": {
-        "internal": "0.2565",
-        "external": "0.1990",
-        "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=5, n_estimators=251)"
+        "internal": "0.2447",
+        "external": "0.1746",
+        "best_estimator": "RandomForestClassifier(max_features=None, max_leaf_nodes=5, n_estimators=51)"
     }
 }
