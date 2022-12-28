@@ -1,0 +1,159 @@
+\documentclass[12pt,italian]{report}
+\usepackage{tesi}
+
+%
+%			INFORMAZIONI SULLA TESI
+%			DA COMPILARE!
+%
+
+% CORSO DI LAUREA:
+\def\myCDL{Corso di Laurea magistrale in Informatica}
+
+% TITOLO TESI:
+\def\myTitle{ANALISI DEI DATI PER\\  \vspace{0.4cm} PROBLEMI DI MEDICINA LEGALE}
+
+% AUTORE:
+\def\myName{Alessandro Beranti}
+\def\myMat{Matr. Nr. 9}
+
+% RELATORE E CORRELATORE:
+\def\myRefereeA{Prof. Elena Casiraghi}
+\def\myRefereeB{Prof. Dario Malchiodi}
+
+% ANNO ACCADEMICO
+\def\myYY{2021-2022}
+
+% Il seguente comando introduce un elenco delle figure dopo l'indice (facoltativo)
+%\figurespagetrue
+
+% Il seguente comando introduce un elenco delle tabelle dopo l'indice (facoltativo)
+%\tablespagetrue
+
+%
+%			PREAMBOLO
+%			Inserire qui eventuali package da includere o definizioni di comandi personalizzati
+%
+
+% Package di formato
+\usepackage[a4paper]{geometry}		% Formato del foglio
+\usepackage[italian]{babel}			% Supporto per l'italiano
+\usepackage[utf8]{inputenc}			% Supporto per UTF-8
+\usepackage[a-1b]{pdfx}			% File conforme allo standard PDF-A (obbligatorio per la consegna)
+\usepackage[pdfa]{hyperref}
+
+% Package per la grafica
+\usepackage{graphicx}				% Funzioni avanzate per le immagini
+\usepackage{hologo}					% Bibtex logo with \hologo{BibTeX}
+%\usepackage{epsfig}				% Permette immagini in EPS
+\usepackage{xcolor}				% Gestione avanzata dei colori
+
+% Package tipografici
+\usepackage{amssymb,amsmath,amsthm} % Simboli matematici
+\usepackage{listings}				% Scrittura di codice
+
+% Package ipertesto
+\usepackage{url}					% Visualizza e rendere interattii gli URL
+\usepackage{hyperref}				% Rende interattivi i collegamenti interni
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{verbatim}
+\usepackage{adjustbox}
+\usepackage{makecell}
+\usepackage{colortbl}
+\lstset{language=Python} 
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\begin{document}
+	
+	% Creazione automatica del frontespizio
+	\frontespizio
+	\beforepreface
+	
+	% 
+	%			PAGINA DI DEDICA E/O CITAZIONE
+	%			facoltativa, questa è l'unica cosa che dovete formattare a mano, un po' come vi pare
+	%
+	
+	{\raggedleft \large \sl to do\\
+		
+	}
+	
+	
+	
+	
+	% 
+	%			PREFAZIONE (facoltativa)
+	%
+	
+	%\prefacesection{Prefazione}
+	%Le prefazioni non sono molto comuni, tuttavia a volte capita che qualcuno voglia dire qualcosa che esuli dal lavoro in s\'e (come un meta-commento sull'elaborato), o voglia fornire informazioni riguardanti l'eventuale progetto entro cui la tesi si colloca (in questo caso \`e probabile che sia il relatore a scrivere questa parte).
+	
+	%
+	%			RINGRAZIAMENTI (facoltativi)
+	%
+	
+	\prefacesection{Ringraziamenti}
+	to do
+	
+	%
+	%			Creazione automatica dell'indice
+	%
+	
+	\afterpreface
+	
+	% 
+	%			CAPITOLO 1: Introduzione o Abstract
+	% 
+	
+	\chapter{Machine Learning}
+	\section{Apprendimento supervisionato}
+	\subsection{Decision Tree Classifier}
+	\subsection{Random Forest Classifier}
+	
+	\chapter{Dataset}
+	\section{The Cancer Genome Atlas (TCGA)}
+	
+	\chapter{Feature selection}
+	\section{Tecniche univariate}
+	\subsection{Bassa variabilità}
+	\subsection{Kruskal-Wallis}
+	\subsection{Mann-Whitney}
+	\section{Tecniche multivariate}
+	\subsection{Minimum Redundancy Maximum Relevance: mrmr}
+	\subsection{Boruta}
+	\section{Dimensionalità intrinseca}
+	\subsection{ID\_twoNN}
+	\section{Maximal information-based nonparametric exploration (MINE)}
+	\subsection{The maximal information coefficient (MIC)}
+	
+	\chapter{Feature extraction}
+	\section{Uniform Manifold Approximation: umap}
+	
+	\chapter{Esperimenti}
+	\section{Preprocessing}
+	\subsection{Scalare i dati}
+	
+	\section{Model selection}
+	\subsection{Tuning degli iperparametri}
+
+	\section{Cross Validation}
+	
+	\section{Metrica di performance}
+	\subsection{Dati sbilanciati}
+	\subsection{Area sotto la curva precision-recall}
+	
+	\section{Analisi dei risultati}
+	
+	\section{Tecnologie usate}
+	
+	
+	%
+	%			BIBLIOGRAFIA
+	%
+	
+	\bibliographystyle{unsrt}
+	\bibliography{bibliografia}
+	\addcontentsline{toc}{chapter}{Bibliografia}
+	
+\end{document}
