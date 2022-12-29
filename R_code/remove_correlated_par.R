@@ -8,9 +8,6 @@ library(doParallel)
 
 remove_correlated_par <- function(df, dim_split = 1000, maxiter = 10, method = method, cutoff = 0.6){
   
-  
-  
-  
   #df has features on columns
   X = t(df)
   niter = 0
@@ -55,8 +52,6 @@ remove_correlated_par <- function(df, dim_split = 1000, maxiter = 10, method = m
     if (no_removed ==0) break;
   }
   cat('final dimension = ', dim(t(X)), '\n')
-  
-  
   
   return(t(X))
 }
