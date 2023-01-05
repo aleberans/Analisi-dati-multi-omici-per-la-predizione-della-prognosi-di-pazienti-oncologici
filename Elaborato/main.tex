@@ -63,6 +63,9 @@
 \lstset{language=Python} 
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
+\usepackage{quoting}
+\quotingsetup{font=small}
+
 
 \begin{document}
 	
@@ -102,57 +105,164 @@
 	
 	\afterpreface
 	
+	
 	% 
 	%			CAPITOLO 1: Introduzione o Abstract
 	% 
 	
-	\chapter{Machine Learning}
-	test
-	\section{Apprendimento supervisionato}
+	\chapter*{Introduzione}
+	\addcontentsline{toc}{chapter}{Introduzione}
+	\markboth{Introduzione}{Introduzione}
+	\label{cap:introduzione}
+	Durante il periodo di tesi mi sono concentrato su (chissà)
+	
+	\chapter{Stato dell'arte}
+	
+	\section{Apprendimento automatico}
+	Il termine apprendimento automatico, comunemente chiamato \textit{Machine learning} in inglese, sta a indicare sta a indicare la capacità dei computer di apprendere e adattarsi agli input forniti.
+	\subsection{Intelligenza artificiale vs Apprendimento automatico}
+	\label{machinelearning}
+	Molto spesso il termine \textit{Machine learning}, o apprendimento automatico in italiano, viene usato per indicare l'intelligenza artificiale e viceversa ma non sono la stessa cosa, il \textit{Machine learning} è un sottoinsieme della categoria più ampia chiamata appunto Intelligenza artificiale.
+ 
+	L'intelligenza artificiale è il campo di computer, sistemi e robot in grado di simulare il comportamento umano in modi che imitano e spesso vanno oltre le capacità umane. I programmi di IA sono in grado di analizzare e fornire dati o attivare automaticamente azioni senza il bisogno dell'uomo. Alcuni esempi pratici sono l'elaborazione del linguaggio naturale e della visione artificiale per automatizzare e velocizzare alcune attività. (quali?)
+	
+	Il \textit{Machine learning} utilizza algoritmi per apprendere in maniera automatica intuizioni e riconoscere modelli a partire da dati forniti in input. Gli algoritmi di apprendimento automatico vengono divisi in quattro categorie distinte a seconda del tipo di dato usato per eseguire la fase di apprendimento, queste categorie sono le seguenti:
+	\begin{itemize}
+		\item apprendimento supervisionato,
+		\item apprendimento non supervisionato,
+		\item apprendimento non supervisionato,
+		\item apprendimento per rinforzo.
+	\end{itemize}
+	
+	\subsubsection{Apprendimento supervisionato}
+	Nell'apprendimento supervisionato abbiamo dei si ha un insieme $x$ di $N$ osservazioni $x_1, x_2,...,x_N$ di un vettore avente $p$ dimensioni che contengono esempi di come $x$ sia in relazione con la variabile di output $y$, anche chiamata etichetta. Usando modelli matematici e statistici adattati ai dati di addestramento, $x$ in questo caso, si vuole cercare di predire l'output $y$, per dati ``nuovi'', ovvero dati che il modello non ha usato nella fase di addestramento.
+	L'approccio usato dall'apprendimento supervisionato per ``imparare'' è quello di estrapolare la relazione che sussiste tra $x$ e $y$, ovvero imparare usando osservazioni reali.
+	Esistono diversi modi per valutare quanto il modello è riuscito a ``imparare bene'' e ci danno una stima di quando sia stato in grado di generalizzare, l'argomento verrà approfondito in \ref{Metriche_di_performance}.
+	
+	Il tipo di output che si ricerca influenza il tipo di problema che si sta affrontando, se abbiamo un output numerico siamo di fronte a un problema di regressione mentre se abbiamo un output categorico siamo di fronte a un problema di classificazione.
+	Una variabile numerica possiede un ordine naturale, se prendiamo un'istanza della variabile siamo in grado di dire se sia più grande o piccola di un'altra istanza della stessa variabile. Una variabile numerica può essere rappresentata da un numero reale continuo come da un numero discreto.
+	Le variabile categoriche invece sono sempre discrete e sono prive di un ordine, un esempio è il seguente:
+	
+	%INSERIRE TABELLA CON ESEMPI
+	
+	\subsubsection{Apprendimento non supervisionato}
+	Nell'apprendimento non supervisionato si ha un insieme di $N$ osservazioni $x_1, x_2,...,x_N$ di un vettore avente $p$ dimensioni ma, al contrario dell'apprendimento supervisionato, l'insieme di dati non ha un'etichetta, i dati sono quindi non annotati.
+	Nel contesto dell'apprendimento supervisionato ci sono diverse metriche quanto bene il modello è stato in grado di imparare. Nel contesto dell'apprendimento non supervisionato non esiste una vera e propria misura diretta del successo di un algoritmo. È molto difficile accertare la validità delle inferenze tratte dall'output. A questo scopo si deve ricorrere a euristiche per valutare la qualità dei risultati ottenuti. Alcune delle tecniche più famose sono calcolare le regole di associazione, usare l'algoritmo ``Apriori'' %vedi altri
+	
+	
+	\subsubsection{Apprendimento per rinforzo}
+	\subsection{Apprendimento semi-supervisionato}
+	
+	
+	\subsubsection{Machine learning in Bioinformatica}
+	Per dati omici si intendono i dati provenienti da esperimenti di geno- mica, trascrittomica, epigenomica, metage- nomica, metabolomica e proteomica 
 	\subsection{Decision Tree Classifier}
+	Gli alberi decisionali sono classificatori che predicono l'etichetta della classe di appartenenza per un insieme di dati. Il vantaggio di questo tipo di classificatori sta nella loro semplicità. Essi sono costruiti analizzando un insieme di dati di addestramento 
 	\subsection{Random Forest Classifier}
 	
 	\chapter{Dataset}
+	- CNV (Copy Number Variations): per ogni gene viene indicato se lo stesso
+	ha subito delezione (i.e. perdita di una o più copie), amplificazione (acquisizione di una
+	o più copie), neutro (nessuna modifica). Si possono trovare al suo interno i seguenti 
+	valori: 0 (neutro), 1 o 2 (amplificazioni), -1 o -2 (delezioni)
+	- miRNA (micro-RNA): livelli di espressione di una particolare tipologia di RNA nota
+	come micro-RNA. Si tratta di piccoli RNA (non codificanti per proteine) che svolgono 
+	funzioni di regolazione all'interno della cellula. I livelli di espressione sono ottenuti 
+	tramite una tecnica nota come RNA-sequencing.
+	- mRNA (RNA messaggeri):   livelli di espressione di un altro tipo di RNA noti come
+	RNA messaggeri. Gli mRNA sono fondamentali all'interno della cellula poichè
+	codificano per le proteine, permettendo alle informazioni contenute nel DNA (che 
+	non può uscire dal nucleo della cellula) di arrivare nel citoplasma dove ci sono i 
+	ribosomi che leggono i trascritti di mRNA e producono le proteine. Anche questi
+	dati sono ottenuti tramite RNA-sequencing.
+	- proteine: livelli di espressione delle proteine. Le proteine sono le macromolecole
+	che svolgono essenzialmente ogni compito all'interno della cellula (formano
+	gli enzimi che catalizzano ogni reazione nella cellula, trasportano le macromolecole
+	all'interno della cellula, sintetizzano le macromolecole, etc). Questi dati sono ottenuti
+	con una tecnica nota come RPPA (Reverse Phase Protein Array).
+	
+	- il file %"labels_pfi" invece contiene le etichette binarie da predire, che sono state scaricate da
+	un dataset noto come TCGA-CDR (https://www.sciencedirect.com/science/article/pii/S0092867418302290 , 
+	essenzialmente un dataset curato manualmente per avere
+	dati clinici e di sopravvivenza il più affidabili possibile). Nello specifico, le etichette fanno riferimento
+	ad una misura nota come PFI (Progression Free Interval) dove:
+	
+	1 stands for patient having new tumor event whether it was a progression of disease, local recurrence, distant metastasis, new primary tumors all sites , or died with the cancer without new tumor event, including cases with a new tumor event whose type is N/A. 0 otherwise.
 	\section{The Cancer Genome Atlas (TCGA)}
+	\subsection{Proteins}
+	\subsection{mRNA}
+	\subsection{miRNA}
+	\subsection{Cnv}
 	
-	\chapter{Feature selection}
-	\section{Tecniche univariate}
-	\subsection{Bassa variabilità}
-	\subsection{Kruskal-Wallis}
-	\subsection{Mann-Whitney}
-	\section{Tecniche multivariate}
-	\subsection{Minimum Redundancy Maximum Relevance: mrmr}
-	\subsection{Boruta}
-	\section{Dimensionalità intrinseca}
-	\subsection{ID\_twoNN}
-	\section{Maximal information-based nonparametric exploration (MINE)}
-	\subsection{The maximal information coefficient (MIC)}
 	
-	\chapter{Feature extraction}
-	\section{Uniform Manifold Approximation: umap}
 	
 	\chapter{Esperimenti}
 	\section{Preprocessing}
 	\subsection{Scalare i dati}
+	\section{Feature selection}
+	Nel machine learning e in statistica, con il termine \textit{feature selection} si intende il processo di selezione di un sottoinsieme di \textit{feature}, anche chiamate caratteristiche o dimensioni rimuovendo \textit{feature} irrilevanti, ridondanti o che producono solo rumore. Questa pratica di solito porta a una migliore capacità di addestramento, accuratezza più elevata, minore costo di computazione e aumento dell'interpretabilità del modello. La feature selection aiuta anche a non incappare nel \textit{curse of dimensionality}.
 	
+	Negli ultimi anni i dati disponibili per applicazioni di machine learning in ambiti come mining di testo, computer vision e biomedico stanno aumentando esponenzialmente sia in termini di campioni sia in termini di numero di dimensioni. L'enorme numero di feature dei dataset attualmente disponibili porta a diversi svantaggi: rallentamento significativo degli algoritmi di \textit{learning}, peggiorare la performance dei suddetti algoritmi ma anche portare a una difficile interpretazione del modello.
+	Le tecniche di feature selection possono essere classificate in tre famiglie: metodi supervisionati, metodi semi-supervisionati e metodi non supervisionati.
+	
+	\subsection{Tecniche univariate}
+	\subsubsection{Bassa variabilità}
+	\subsubsection{Mann-Whitney}
+	The Mann-Whitney U test is a nonparametric test of the null hypothesis that the distribution underlying sample x is the same as the distribution underlying sample y. It is often used as a test of difference in location between distributions.
+	\subsection{Tecniche multivariate}
+	\subsubsection{Minimum Redundancy Maximum Relevance: mrmr}
+	\subsubsection{Boruta}
+	\subsection{Dimensionalità intrinseca}
+	\subsubsection{ID\_twoNN}
+	\subsection{Maximal information-based nonparametric exploration (MINE)}
+	\subsubsection{The maximal information coefficient (MIC)}
+	\subsection{Spearman}
+	
+	\section{Feature extraction}
+	Il termine di \textit{feature extraction}, o estrazione delle caratteristiche, si riferisce al processo di trasformazione dei dati grezzi in caratteristiche numeriche che possono essere elaborate preservando le informazioni nel set di dati originale. Produce risultati migliori rispetto all'applicazione dell'apprendimento automatico direttamente ai dati grezzi.
+	\subsection{Uniform Manifold Approximation: umap}
+	\subsection{t-SNE}
 	\section{Model selection}
 	\subsection{Tuning degli iperparametri}
 
 	\section{Cross Validation}
 	
 	\section{Metrica di performance}
+	\label{Metriche_di_performance}
+	Le metriche di performance sono molto importanti in un processo di \textit{machine learning}. Esse ci indicano se stiamo facendo progressi nella creazione del modello che meglio si adatta ai dati in input. Esistono diverse metriche che possono essere usate a seconda dei problemi cui siamo davanti. Se stiamo trattando un problema di regressione, avente quindi output continuo, dobbiamo calcolare in qualche modo la distanza tra il dato predetto e quello originale; per fare ciò possiamo usare diverse metriche: \textit{Mean absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), $R^2$ (R-Squared)}.
+	
+	Siccome il problema affrontato è un problema di classificazione entreremo più nel dettaglio in questo argomento. I modelli di classificazione hanno un output discreto quindi abbiamo bisogno di metriche che comparino classi discrete. Le metriche di classificazione valutano le prestazioni di un modello e ti dicono quanto è buona o cattiva la classificazione, ma ognuna di esse la valuta in modo diverso.
+	Esistono diverse metriche:
+	\begin{itemize}
+		\item accuratezza,
+		\item matrice di confusione,
+		\item precision e recall
+		\item f1-score,
+		\item au-roc.
+	\end{itemize}
+	\paragraph{Accuratezza}
+	L'accuratezza è la metrica più semplice da usare e implementare. Essa non è altro che il numero di predizioni che il modello ha fatto correttamente diviso per il totale di predizioni, moltiplicato per 100 per avere la percentuale.
+	
+	\paragraph{Marice di confusione}
+	La matrice di confusione non è propriamente una metriche ma è molto utile per definire le altre metriche.
+	
 	\subsection{Dati sbilanciati}
 	\subsection{Area sotto la curva precision-recall}
 	
-	\section{Analisi dei risultati}
+	
+	L'area sotto la curva precision-recall è un singolo numero che riassume l'informazione della curva precision-recall a diverse soglie. La curva PR viene sempre più usata nel \textit{machine learning}, nei problemi di classificazione, sopratutto quando si ha a che fare con \textit{datasets} sbilanciati, ovvero dove una classe è molto più frequente dell'altra. (aggiungi riferimento a come è composto il mio dataset). In questi contesti la curva PR è da preferire alla curva ROC 
+	
+	\section{Risultati}
 	
 	\section{Tecnologie usate}
 	
-	
+	\chapter{Conclusioni e sviluppi futuri}
 	%
 	%			BIBLIOGRAFIA
 	%
 	
+	\nocite{smlbook}
+	\nocite{Kingsford2008}
 	\bibliographystyle{unsrt}
 	\bibliography{bibliografia}
 	\addcontentsline{toc}{chapter}{Bibliografia}
