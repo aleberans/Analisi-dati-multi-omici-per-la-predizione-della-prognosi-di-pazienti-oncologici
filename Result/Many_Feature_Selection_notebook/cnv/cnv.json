@@ -1,7 +1,22 @@
 {
     "spearman": {
-        "internal": "0.1347",
-        "external": "0.0991",
-        "best_estimator": "RandomForestClassifier(criterion='entropy', max_leaf_nodes=5, n_estimators=101)"
+        "internal": "0.13",
+        "external": "0.10",
+        "best_estimator": "RandomForestClassifier(class_weight='balanced', criterion='entropy',\n                       max_features=None, max_leaf_nodes=5, n_estimators=101)"
+    },
+    "mannwhitneyu": {
+        "internal": "0.13",
+        "external": "0.10",
+        "best_estimator": "RandomForestClassifier(class_weight='balanced', criterion='entropy',\n                       max_features=None, max_leaf_nodes=10, n_estimators=51)"
+    },
+    "mannwhitneyu_with_umap": {
+        "internal": "0.27",
+        "external": "0.15",
+        "best_estimator": "RandomForestClassifier(class_weight='balanced', criterion='entropy',\n                       max_features='log2', max_leaf_nodes=5, n_estimators=51)"
+    },
+    "mine": {
+        "internal": "0.15",
+        "external": "0.11",
+        "best_estimator": "RandomForestClassifier(class_weight='balanced', criterion='entropy',\n                       max_features='log2', max_leaf_nodes=2, n_estimators=251)"
     }
 }

@@ -23,5 +23,10 @@
         "internal": "0.1906",
         "external": "0.1443",
         "best_estimator": "RandomForestClassifier(criterion='entropy', max_features='log2',\n                       max_leaf_nodes=2, n_estimators=101)"
+    },
+    "spearman": {
+        "internal": "0.21",
+        "external": "0.14",
+        "best_estimator": "RandomForestClassifier(class_weight='balanced', max_leaf_nodes=2,\n                       n_estimators=101)"
     }
 }

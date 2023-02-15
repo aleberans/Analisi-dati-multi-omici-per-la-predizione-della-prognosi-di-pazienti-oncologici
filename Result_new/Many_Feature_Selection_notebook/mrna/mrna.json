@@ -1,0 +1,7 @@
+{
+    "mannwhitneyu_with_umap": {
+        "internal": "0.40",
+        "external": "0.14",
+        "best_estimator": "RandomForestClassifier(max_leaf_nodes=10, n_estimators=51)"
+    }
+}
